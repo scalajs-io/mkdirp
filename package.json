@@ -1,0 +1,9 @@
+{
+  "name": "mkdirp-scalajs",
+  "version": "0.5.1",
+  "private": true,
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "source-map": "^0.5.6"
+  }
+}
