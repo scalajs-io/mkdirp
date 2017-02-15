@@ -1,21 +1,23 @@
 Mkdirp API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [mkdirp](https://www.npmjs.com/package/mkdirp)
+[mkdirp](https://www.npmjs.com/package/mkdirp) - Recursively mkdir, like mkdir -p
 
-Recursively mkdir, like mkdir -p
+### Description
 
-#### Build Dependencies
+Like mkdir -p, but in node.js!
+
+### Build Dependencies
 
 * [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +31,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 Using `Mkdirp` asynchronously via callbacks
 
@@ -64,7 +66,7 @@ val result = Mkdirp.sync("/tmp/foo/bar/baz")
 println(s"Created: $result")
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `Mkdirp` binding to your project, add the following to your build.sbt:  
 
