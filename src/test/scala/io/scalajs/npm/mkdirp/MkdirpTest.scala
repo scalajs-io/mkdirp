@@ -32,7 +32,7 @@ class MkdirpTest extends FunSpec {
       // delete the directory if it exists
       if (Fs.existsSync(path)) Fs.rmdirSync(path)
 
-      Mkdirp.async(path).future onComplete {
+      Mkdirp.future(path) onComplete {
         case Success(result) => info(s"Success: $result")
         case Failure(e) =>
           fail(s"Failed: ${Option(e).map(_.getMessage).orNull}")

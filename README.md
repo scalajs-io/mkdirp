@@ -48,7 +48,7 @@ Using `Mkdirp` asynchronously via promises
 import io.scalajs.npm.mkdirp._
 import scala.util.{Success, Failure}
 
-Mkdirp.async("/tmp/foo/bar/baz").future onComplete {
+Mkdirp.future("/tmp/foo/bar/baz") onComplete {
     case Success(result) => println(s"Created: $result")
     case Failure(e) =>
       println(s"Failed: ${Option(e).map(_.getMessage).orNull}")
@@ -70,7 +70,7 @@ println(s"Created: $result")
 To add the `Mkdirp` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "mkdirp" % "0.4.0-pre4"
+libraryDependencies += "io.scalajs.npm" %%% "mkdirp" % "0.4.0-pre5"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:

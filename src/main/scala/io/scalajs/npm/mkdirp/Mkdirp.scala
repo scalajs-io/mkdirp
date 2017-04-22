@@ -74,7 +74,8 @@ trait Mkdirp extends js.Object {
 object Mkdirp extends Mkdirp
 
 /**
-  * Mkdirp Options
+  * Mkdirp Optional Settings
+  * @param mode the given mode
   */
 @ScalaJSDefined
 class MkdirpOptions(val mode: js.UndefOr[Int] = js.undefined) extends js.Object
