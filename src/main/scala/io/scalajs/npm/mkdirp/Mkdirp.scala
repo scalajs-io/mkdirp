@@ -3,7 +3,7 @@ package io.scalajs.npm.mkdirp
 import io.scalajs.RawOptions
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, ScalaJSDefined}
+import scala.scalajs.js.annotation.JSImport
 import scala.scalajs.js.|
 
 /**
@@ -77,5 +77,5 @@ object Mkdirp extends Mkdirp
   * Mkdirp Optional Settings
   * @param mode the given mode
   */
-@ScalaJSDefined
+
 class MkdirpOptions(val mode: js.UndefOr[Int] = js.undefined) extends js.Object
